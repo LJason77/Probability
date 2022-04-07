@@ -1,0 +1,16 @@
+[package]
+name = "probability"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.60"
+authors = ["LJason <ljason@ljason.cn>"]
+readme = "README.md"
+repository = "https://github.com/LJason77/Probability.git"
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+panic = "abort"
+
+[dependencies]
+rand = "0.8"
